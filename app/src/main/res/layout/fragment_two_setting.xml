@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightColor"
+    android:gravity="center_horizontal|center_vertical">
+
+
+    <TextView
+        android:id="@+id/txt_Title_Necessary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_title"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Setting Info"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <Space
+        android:id="@+id/space_1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_Title_Necessary"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:id="@+id/ly_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space_1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/lightColor"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+            android:checked="true"
+            android:paddingRight="20dp"
+            android:text="Email Notification" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_miles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_notification"
+        android:paddingTop="30dp"
+        android:background="@color/lightColor"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Wineries within how many miles"
+            android:textColor="@color/textColor"
+            android:textSize="19sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_xMiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/chk_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_weight="1"
+                android:text="25" />
+
+            <RadioButton
+                android:id="@+id/chk_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+
+                android:layout_weight="1"
+                android:text="50" />
+
+            <RadioButton
+                android:id="@+id/chk_75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_weight="1"
+                android:text="75" />
+
+            <RadioButton
+                android:id="@+id/chk_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_weight="1"
+                android:text="100" />
+
+            <RadioButton
+                android:id="@+id/chk_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_weight="1"
+                android:text="200" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Submit_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ly_miles"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="#FFFFFF"
+        android:text="Update"
+        android:textSize="18sp"/>
+</RelativeLayout>

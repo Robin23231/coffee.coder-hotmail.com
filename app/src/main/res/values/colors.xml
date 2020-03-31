@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="lightColor">#ccF3F3F3</color>
+    <color name="textColor">#372c24</color>
+    <color name="price_bg">#aa858484</color>
+    <color name="textHintColor">#918888</color>
+    <color name="color_red_pressed">#c31c13</color>
+    <color name="color_red_normal">#c31c13</color>
+    <color name="text_color">#636360</color>
+    <color name="plan_back">#666666</color>
+    <color name="pay_submit">#5FA228</color>
+    <color name="duskYellow">#FFC107</color>
+    <color name="lightGrey">#7CBD7C</color>
+
+    <color name="white">#FFFFFF</color>
+
+</resources>

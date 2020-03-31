@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightColor"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_Title_Necessary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_title"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/pay_info"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/demo"
+            android:alpha="0.5"
+            android:src="@drawable/ic_credit_card"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/price_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+<!--            <EditText-->
+<!--                android:id="@+id/edt_name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:hint="NAME"/>-->
+
+            <EditText
+                android:id="@+id/edt_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="EMAIL" />
+            <com.stripe.android.view.CardMultilineWidget
+                android:id="@+id/card_input_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/plan_back"
+                android:layout_margin="20dp"/>
+<!--            <EditText-->
+<!--                android:id="@+id/edt_cardnum"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="number"-->
+<!--                android:hint="CARD NUMBER" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edt_expireM"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="number"-->
+<!--                android:hint="EXPIRE MONTH" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edt_expireY"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="number"-->
+<!--                android:hint="EXPIRE YEAR" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edt_cvc"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="number"-->
+<!--                android:hint="CVC CODE" />-->
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_payment"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/pay_submit"
+            android:text="Pay For My Winery"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

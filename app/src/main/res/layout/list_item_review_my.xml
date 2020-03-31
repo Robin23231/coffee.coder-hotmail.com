@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/ly_review"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_rectangle_now_state"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:text="no review content"
+        android:textColor="@color/textColor"
+        android:inputType="textMultiLine"
+        tools:ignore="TextViewEdits" />
+
+    <RatingBar
+        android:id="@+id/review_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/RatingBar"
+        android:gravity="center_vertical"
+        android:rating="4.5"
+        android:layout_marginLeft="20dp"
+        style = "?android:attr/ratingBarStyleSmall"
+        android:textSize="16sp"
+        android:numStars="5"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_review_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:ems="10"
+        android:layout_marginLeft="20dp"
+        android:gravity="start|top"
+        android:text="Name -- Email"
+        android:inputType="textMultiLine"
+        tools:ignore="TextViewEdits" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/reply_review"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:hint="My Reply"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/textHintColor"
+            android:background="@drawable/layout_rectangle_now_state"
+            android:textColor="@color/textColor"/>
+        <Button
+            android:id="@+id/reply_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Reply"
+            android:background="@drawable/selector_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>

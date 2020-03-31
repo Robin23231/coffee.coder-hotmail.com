@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/icon"
+        tools:ignore="RtlHardcoded" />
+
+    <RatingBar
+        android:id="@+id/review_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_toRightOf="@id/imageView"
+        android:theme="@style/RatingBar"
+        android:gravity="center_vertical"
+        style = "?android:attr/ratingBarStyleSmall"
+        android:textSize="16sp"
+        android:numStars="5"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_v"
+        android:layout_toEndOf="@id/imageView"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:textColor="@color/textColor"
+        android:text=""
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_company"
+        android:layout_toEndOf="@id/imageView"
+        android:textColor="@color/textColor"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tv_address"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/imageView"
+        android:gravity="center_vertical"
+        android:textSize="10sp"/>
+
+</RelativeLayout>

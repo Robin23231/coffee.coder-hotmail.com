@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightColor">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub_winery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:text="Winery cost" />
+
+    <EditText
+        android:id="@+id/et_sub_winery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:textColor="@color/textColor"
+        android:background="@drawable/layout_rectangle_now_state"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_sub_festival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:text="Fetival cost" />
+
+    <EditText
+        android:id="@+id/et_sub_festival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/layout_rectangle_now_state"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_sub_tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:text="Event cost" />
+
+    <EditText
+        android:id="@+id/et_sub_tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/layout_rectangle_now_state"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_sub_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Submit" />
+</LinearLayout>

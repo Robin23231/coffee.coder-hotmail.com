@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightColor"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/et_winery_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Winery Name"
+        android:textColorHint="@color/textHintColor"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Phone Number"
+        android:textColorHint="@color/textHintColor"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:hint="Email"
+        android:textColorHint="@color/textHintColor"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="Reason why I m cancel my Account" />
+
+    <EditText
+        android:id="@+id/et_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:minLines="5"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reason"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button"
+        android:text="Submit" />
+</LinearLayout>

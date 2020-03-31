@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/txt_Title_Necessary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightColor"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="Wine Tours"
+        android:textColor="@color/color_red_pressed"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <RatingBar
+        android:id="@+id/map_view_rate"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_company_name"
+        android:layout_alignStart="@id/map_btn"
+        android:layout_marginBottom="0dp"
+        android:numStars="5"
+        android:rating="5"
+        android:theme="@style/RatingBar" />
+    <TextView
+        android:id="@+id/map_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/map_btn"
+        android:layout_above="@id/map_btn">
+    </TextView>
+    <TextView
+        android:id="@+id/map_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_marginEnd="40dp"
+        android:layout_above="@id/map_btn">
+    </TextView>
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_above="@id/ly_view"
+        android:background="@drawable/edit_text_bg_1"
+        android:layout_margin="@dimen/fab_margin"
+        android:textColor="@color/textColor"
+        android:text="Directions">
+    </Button>
+
+
+    <Button
+        android:id="@+id/btn_winery_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg_1"
+        android:text="Add Tour"
+        android:textColor="@color/textColor"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/ly_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="20dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ly_view"
+        android:layout_below="@id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?actionBarSize"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/white"
+                android:background="@color/price_bg"
+                app:tabIndicatorHeight="4dp"
+                app:tabMode="fixed">
+            </com.google.android.material.tabs.TabLayout>
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tabLayout"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view_1"
+                android:background="@color/lightColor" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

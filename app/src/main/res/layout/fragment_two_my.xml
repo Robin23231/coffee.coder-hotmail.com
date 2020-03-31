@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/s_1"
+        android:textAlignment="center"
+        android:text="You can download the complete up to date list of wineries for only $100usd." />
+    <Space
+        android:id="@+id/s_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/ly_button"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/ly_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button"
+            android:text="Pay" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button"
+            android:text="Download" />
+    </LinearLayout>
+
+
+</RelativeLayout>

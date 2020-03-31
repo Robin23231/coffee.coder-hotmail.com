@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.demo.winery">
+
+    <permission
+        android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk tools:overrideLibrary="com.paypal.android.sdk.payments"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_winery"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_winery"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name=".Activity_Spalsh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.activity_AskPay"/>
+        <activity android:name=".activities.activity_SignUp"/>
+        <activity android:name=".activities.activity_Main"/>
+        <activity android:name=".activities.activity_SignIn"/>
+        <activity android:name=".stripe.stripe_main"/>
+        <activity android:name=".activities.activity_Details"/>
+        <activity android:name=".activities.Claim_Winery"/>
+        <activity android:name=".my_activities.Activity_My"/>
+        <activity android:name=".my_activities.Activity_Before_My"/>
+        <activity android:name=".my_activities.activity_Details_my"/>
+        <activity android:name=".event.Claim_event"/>
+        <activity android:name=".setting.activity_Setting"/>
+        <activity android:name=".tour.Claim_Tour"/>
+        <activity android:name=".event.Event_detail"/>
+        <activity android:name=".tour.Tour_detail"/>
+        <activity android:name=".fetival.Claim_Festival"/>
+        <activity android:name=".fetival.Festival_detail_one"/>
+        <activity android:name=".tour.Tour_detail_my"/>
+        <activity android:name=".ads.Claim_ads"/>
+        <activity android:name=".ads.Ads_detail"/>
+        <activity android:name=".ads.Ads_details_my"/>
+        <activity android:name=".activities.activity_Link"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

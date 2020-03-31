@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/layout_rectangle_now_state"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/tv_evnet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:padding="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Event Name"/>
+
+    <TextView
+        android:id="@+id/tv_evnet_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/tv_evnet_name"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:text="1990/01/01 ~ 2020/01/01"/>
+
+    <TextView
+        android:id="@+id/tv_event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/tv_evnet_period"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:text="location of event" />
+
+    <TextView
+        android:id="@+id/tv_event_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/tv_evnet_period"
+        android:layout_toRightOf="@id/tv_event_location"
+        android:textSize="14sp"
+        android:text="distance of event" />
+</RelativeLayout>

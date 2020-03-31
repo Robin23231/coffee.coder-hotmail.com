@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ly_review"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_rectangle_now_state"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edt_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="Please Write My Review"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:textColorHint="@color/textHintColor" />
+
+        <RatingBar
+            android:id="@+id/review_rate_user"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.4"
+            android:scaleX="0.4"
+            android:layout_gravity="center"
+            android:theme="@style/RatingBar"
+            android:numStars="5" />
+        <Button
+            android:id="@+id/btn_review_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="@android:color/white"
+            android:text="@string/left_review"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ly_review"/>
+
+</RelativeLayout>

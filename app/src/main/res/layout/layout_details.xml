@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/google_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/winery_mapView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/google_container"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp" />
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/map_view_rate"-->
+<!--        style="?android:attr/ratingBarStyleSmall"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/map_company_name"-->
+<!--        android:layout_alignStart="@id/map_btn"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:numStars="5"-->
+<!--        android:rating="5"-->
+<!--        android:theme="@style/RatingBar" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/map_company_name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignStart="@id/map_btn"-->
+<!--        android:layout_above="@id/map_btn">-->
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/map_distance"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAlignment="viewEnd"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:layout_above="@id/map_btn">-->
+<!--    </TextView>-->
+
+    <LinearLayout
+        android:id="@+id/ly_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/google_container"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/map_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg_1"
+            android:textColor="@color/textColor"
+            android:text="Directions"/>
+
+        <Button
+            android:id="@+id/btn_winery_claim"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg_1"
+            android:text="Claim This Winery"
+            android:textColor="@color/textColor"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_top"
+        android:minHeight="?actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"
+        android:background="@color/price_bg"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed">
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tabLayout"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_1"
+        android:background="@color/lightColor" />
+
+</RelativeLayout>

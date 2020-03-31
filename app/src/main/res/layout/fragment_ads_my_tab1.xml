@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightColor"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_Title_Necessary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_title"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="ADs Info"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <ImageView
+                android:id="@+id/img_ads_Logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:hint="Logo"
+                android:textColorHint="@color/textHintColor"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ads_onwer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Advertiser Name"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ads_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Company Name"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/edt_ads_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ads_City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="@string/city"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ads_Zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="@string/zip"
+                android:inputType="number"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_ads_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Phone"
+                android:inputType="number"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/edt_ads_Website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Website"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/edt_ads_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Description"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:lines="20"
+                android:minLines="5"
+                android:textColorHint="@color/textHintColor"
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btn_ads_Signup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@android:color/white"
+                    android:text="Submit"
+                    android:textSize="15sp"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btn_ads_close"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@android:color/white"
+                    android:text="Close"
+                    android:textSize="15sp"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

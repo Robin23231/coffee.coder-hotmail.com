@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+        <style name="RatingBar" parent="Theme.AppCompat">
+            <item name="colorControlActivated">@color/duskYellow</item>
+            <item name="colorControlNormal">@color/lightGrey</item>
+    </style>
+
+    <style name="MyToolbarTheme"
+        parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="Theme_AlertDialog">
+        <![CDATA[<?xml version="1.0" encoding="utf-8"?> <resources>     <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">         <item name="android:textColor">#00FF00</item>         <item name="android:typeface">monospace</item>         <item name="android:textSize">10sp</item>     </style> </resources>]]></style>
+    <!-- Base application theme. -->
+    <style name="HeaderBar">
+        <item name="android:background">#303F9F</item>
+    </style>
+</resources>

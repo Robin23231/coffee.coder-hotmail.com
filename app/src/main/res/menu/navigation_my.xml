@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_winery"
+        android:icon="@drawable/winery_logo"
+        android:checked="true"
+        android:title="My Winery" />
+
+    <item
+        android:id="@+id/navigation_event"
+        android:icon="@drawable/event_logo"
+         android:title="My Event" />
+
+    <item
+        android:id="@+id/navigation_tour"
+        android:icon="@drawable/tour_logo"
+        android:title="My Tour" />
+    <item
+        android:id="@+id/navigation_ads"
+        android:icon="@drawable/ads_logo"
+        android:title="Advertiser" />
+
+
+    <item
+        android:id="@+id/navigation_paymod"
+        android:icon="@drawable/coin"
+        android:title="Subscription" />
+</menu>
